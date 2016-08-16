@@ -1,18 +1,24 @@
 # 前端面试题
 ### javascript
 
-*	[typeof null, null instanceof Object]
+
+*	第一题
+	
+	[typeof null, null instanceof Object]  结果是？
+	
 *	第二题
 
 ```
 var val = 'smtg';
 
 console.log('Value is ' + (val === 'smtg') ? 'Something' : 'Nothing');
+
+//输出结果是？
 ```
 *	第三题
 
 ```
- var name = 'World!';
+    var name = 'World!';
     (function () {
       if (typeof name === 'undefined') {
         var name = 'Jack';
@@ -21,6 +27,8 @@ console.log('Value is ' + (val === 'smtg') ? 'Something' : 'Nothing');
         console.log('Hello ' + name);
       }
     })();
+
+    //输出结果是？
 ```
 *	第四题
 
@@ -28,6 +36,8 @@ console.log('Value is ' + (val === 'smtg') ? 'Something' : 'Nothing');
 var ary = [0,1,2];
 ary[10] = 10;
 ary.filter(function(x) { return x === undefined;});
+
+//输出结果是？
 ```
 *	第五题
 
@@ -48,6 +58,8 @@ ary.filter(function(x) { return x === undefined;});
       }
     }
     showCase(new String('A'));	
+
+    //输出结果是？
 ```
 
 *	第六题
@@ -69,13 +81,17 @@ function showCase2(value) {
       }
     }
     showCase(String('A'));
+    
+    //输出结果是？
 ```
 
-*	[]==[]
+*	第七题
+
+	[]==[] 结果是？
 
 
 
-*	
+*	第八题
 
 ```
 var Foo = {};
@@ -87,23 +103,26 @@ Foo.method = function() {
 }
 
 Foo.metnod();
+
+//输出结果是？
 ```
 
-* 
+*	第九题 
 
 ```
 function Foo() {
     this.value = 42;
     this.method = function() {
-        // this 指向全局对象
-        console.log(this.value); // 输出：undefined
+        console.log(this.value);
     };
     setTimeout(this.method, 500);
 }
 new Foo();
+
+//输出结果是？
 ```
 
-*
+*	第10题
 
 ```
 function foo() { }
@@ -112,15 +131,35 @@ function foo() { }
     [oldName, foo.name]
 ```
 
-* 	写一个通用的事件侦听器函数。
+* 	第11题
+
+	Javascript实现格式化输出，比如输入999999999，输出为999,999,999
 
 
 ### HTML&CSS
 *	HTML5 为什么只需要写 <!DOCTYPE HTML>？	
+
+
+
+
 *	使用link和@import有什么区别？
+
+
+
+
 *	常见的浏览器内核有哪些？	
+
+
+
 *	盒模型
+
+
+
 *	用纯CSS创建一个三角形的原理是什么？
+
+
+
+
 
 
 ### 考察点
